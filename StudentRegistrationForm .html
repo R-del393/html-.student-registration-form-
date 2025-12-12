@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title>Student Registration Form - Practical Test III</title>
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <div>
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="gender_male" name="gender" value="male" required>
+                <label for="gender_male">Male</label>
+
+                <input type="radio" id="gender_female" name="gender" value="female">
+                <label for="gender_female">Female</label>
+
+                <input type="radio" id="gender_other" name="gender" value="other">
+                <label for="gender_other">Other</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course and Account Details</legend>
+
+            <div>
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select an option --</option>
+                    <option value="csc">Computer Science (CSC)</option>
+                    <option value="bit">Business Information Technology (BIT)</option>
+                    <option value="is">Information Systems (IS)</option>
+                    <option value="ict">Information & Communication Technology (ICT)</option>
+                    <option value="bba">Bachelor of Business Administration (BBA)</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+
+            <div>
+                <label>Select Hobbies:</label><br>
+
+                <input type="checkbox" id="hobby_reading" name="hobbies[]" value="reading">
+                <label for="hobby_reading">Reading</label>
+
+                <input type="checkbox" id="hobby_sports" name="hobbies[]" value="sports">
+                <label for="hobby_sports">Sports</label>
+
+                <input type="checkbox" id="hobby_music" name="hobbies[]" value="music">
+                <label for="hobby_music">Music</label>
+
+                <input type="checkbox" id="hobby_coding" name="hobbies[]" value="coding">
+                <label for="hobby_coding">Coding</label>
+            </div>
+        </fieldset>
+
+        <div style="margin-top: 20px;">
+            <input type="submit" value="Register Student">
+            
+            <input type="reset" value="Clear Form">
+        </div>
+
+    </form>
+    </body>
+</html>
